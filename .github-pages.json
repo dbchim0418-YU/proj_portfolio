@@ -1,0 +1,13 @@
+{
+  "config": "hugo.toml,pages.json",
+  "theme": "template",
+  "sample": "exampleSite",
+  "version": "0.167.0",
+  "slug": "hugo-coder",
+  "npm": [],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/dbchim0418-YU/proj_portfolio.git",
+  "baseURL": "https://dbchim0418-yu.github.io/proj_portfolio/",
+  "audited": true
+}
