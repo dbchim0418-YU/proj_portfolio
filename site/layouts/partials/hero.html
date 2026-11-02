@@ -1,0 +1,44 @@
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <img src="{{ .Site.Params.heroBackground | relURL }}" alt="Background">
+  </div>
+
+  <div class="container" style="max-width: 80rem;">
+    <div class="hero-content">
+      <!-- Text -->
+      <div class="fade-in flex-1" style="text-align: center;">
+        <div class="location-tag mb-6">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><circle cx="12" cy="20" r="1"/></svg>
+          {{ .Site.Params.field }}
+        </div>
+
+        <h1 style="font-size: clamp(2.25rem, 5vw, 4.5rem); font-weight: 700; margin-bottom: 1.5rem;">
+          <span class="text-primary">{{ .Site.Params.firstName }}</span>
+        </h1>
+
+        <p class="text-muted" style="font-size: clamp(1.125rem, 2vw, 1.375rem); font-weight: 300; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+          {{ .Site.Params.tagline }}
+        </p>
+
+        <div class="flex flex-col gap-4 items-center" style="flex-wrap: wrap;">
+          <div class="flex gap-4 items-center" style="flex-wrap: wrap; justify-content: center;">
+            <a href="#experience" class="btn btn-primary btn-lg" data-scroll="experience">
+              연구 활동 보기
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="{{ .Site.Params.github }}" target="_blank" rel="noreferrer" class="btn btn-outline btn-lg">
+              <svg class="icon-md" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Photo -->
+      <div class="fade-in-none hero-photo delay-2">
+        <img src="{{ .Site.Params.profileImage | relURL }}" alt="{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}">
+      </div>
+    </div>
+  </div>
+</section>
