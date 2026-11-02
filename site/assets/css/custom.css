@@ -1,0 +1,39 @@
+/* 사이트 전용 스타일 (테마 원본 main.css 뒤에 불러옴) */
+
+/* 한글 글꼴: Pretendard 1.3.9, KS X 1001 2,350자 경량판, SIL OFL 1.1
+   파일과 라이선스: static/fonts/pretendard/ */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/pretendard/Pretendard-Light.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/pretendard/Pretendard-Regular.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/pretendard/Pretendard-SemiBold.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/pretendard/Pretendard-Bold.subset.woff2') format('woff2');
+}
+
+/* 영문은 테마 글꼴을 유지하고, 테마 글꼴에 없는 한글은 Pretendard로 표시 */
+:root {
+  --font-sans: 'Inter', 'Pretendard', system-ui, -apple-system, sans-serif;
+  --font-display: 'Playfair Display', 'Pretendard', serif;
+}
+
+/* 한글 이름은 기울임 글꼴이 없어 억지로 눕혀지므로 기울임 해제 */
+.hero h1 .italic {
+  font-style: normal;
+}
