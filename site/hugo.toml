@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Jane Doe — Software Engineer'
+languageCode = 'ko'
+title = '유채민 | 무선 네트워크 포트폴리오'
 
 
 [params]
