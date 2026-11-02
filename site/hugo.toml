@@ -13,9 +13,8 @@ title = '유채민 | 무선 네트워크 포트폴리오'
   field = "Network & Wireless Communication"
   github = "https://github.com/dbchim0418-YU"
   profileImage = "images/avatar.svg"
-  heroBackground = "/images/hero-bg.png"
-  favicon = "/favicon.svg"
-  ogImage = "/opengraph.jpg"
+  favicon = "images/avatar.svg"
+  ogImage = "images/avatar.svg"
   resumeFile = "/resume.pdf"
   description = "5G MAC 스케줄러를 연구하는 학부연구생 유채민의 포트폴리오입니다."
 
