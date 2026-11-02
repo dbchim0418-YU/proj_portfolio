@@ -4,9 +4,9 @@ title = '유채민 | 무선 네트워크 포트폴리오'
 
 
 [params]
-  firstName = "Jane"
-  lastName = "Doe"
-  tagline = "Software Engineer"
+  firstName = "유채민"
+  lastName = ""
+  tagline = "무선 네트워크의 자원 스케줄링을 연구합니다."
   email = "jane.doe@example.com"
   linkedin = "https://www.linkedin.com/in/example/"
   location = "Remote"
@@ -15,7 +15,7 @@ title = '유채민 | 무선 네트워크 포트폴리오'
   favicon = "/favicon.svg"
   ogImage = "/opengraph.jpg"
   resumeFile = "/resume.pdf"
-  description = "Jane Doe — Software Engineer building reliable systems."
+  description = "5G MAC 스케줄러를 연구하는 학부연구생 유채민의 포트폴리오입니다."
 
 disableKinds = ['taxonomy', 'term']
 
