@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{- /* 원본의 .Site.Data는 Hugo 0.156부터 사용 중단 예정이라 hugo.Data로 변경하고, 쓰지 않는 발표, 수상 섹션은 제외 */ -}}
+  {{- partial "hero.html" . -}}
+  {{- partial "about.html" . -}}
+  {{- with hugo.Data.experience }}{{- partial "experience.html" $ -}}{{ end -}}
+  {{- with hugo.Data.skills }}{{- partial "skills.html" $ -}}{{ end -}}
+  {{- with hugo.Data.education }}{{- partial "education.html" $ -}}{{ end -}}
+  {{- partial "contact.html" . -}}
+{{ end }}
