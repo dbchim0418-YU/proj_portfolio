@@ -10,3 +10,14 @@
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
+
+# 개인 편집기, 운영체제가 만드는 파일과 로컬 빌드 결과 (작업마다 불필요한 변경이 생기지 않도록 제외)
+.vscode/
+.idea/
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+/public-local/
+/site/public/
