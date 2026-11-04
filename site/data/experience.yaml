@@ -1,34 +1,18 @@
-# Work experience, newest first. Each entry renders as a timeline card.
-# `context`, `projects` and `media_mentions` are optional.
-- company: "Example Corp"
-  title: "Senior Software Engineer"
-  period: "Jan 2022 - Present"
-  context: "Example Corp is a placeholder company used to demonstrate the theme. Replace this with a short description of where you worked."
-  bullets:
-    - "Describe a key responsibility or achievement here."
-    - "Quantify impact where you can (e.g. improved X by 30%)."
-    - "Keep each bullet to a single concise sentence."
-  projects:
-    - title: "Sample Project"
-      desc: "A short one-line description of what this project does."
-      tags:
-        - "Go"
-        - "Distributed Systems"
-    - title: "Another Project"
-      desc: "Another optional project to show under this role."
-      tags:
-        - "TypeScript"
-        - "React"
-  # media_mentions:
-  #   - publication: "Example News"
-  #     article_title: "How Example Corp shipped X"
-  #     excerpt: "A short quote or summary of the article."
-  #     url: "https://example.com/article"
-
-- company: "Startup Inc"
-  title: "Software Engineer"
-  period: "Jun 2019 - Dec 2021"
-  context: "Optional context line about the company or team."
-  bullets:
-    - "Built and maintained core product features."
-    - "Collaborated with cross-functional teams to ship releases."
+# 연구 활동 (최신순). 각 항목은 연구 활동 섹션의 카드 하나로 표시됩니다.
+# details: 제목(heading)과 문단(text) 또는 번호 목록(items)으로 이루어진 상세 설명
+- company: "5G NR MAC 스케줄러 연구"
+  title: "네트워크 분야 학부연구실, 학부연구생"
+  period: "2026년 7월 ~ 현재"
+  status: "진행 중"
+  context: "ns-3 5G-LENA 시뮬레이터에서 Lyapunov 기반 MAC 스케줄러를 단말 내 다중 플로우 환경으로 확장하는 연구"
+  bullets: []
+  details:
+    - heading: "목적"
+      text: "5G에서 여러 서비스가 함께 쓰일 때 품질(QoS)을 지키는 무선 자원 스케줄링 방법을 이해하고, 기존 Lyapunov 기반 스케줄러를 다중 플로우 환경으로 확장하는 것이 목표입니다."
+    - heading: "내 역할"
+      text: "연구 주제와 방향은 교수님 지도 아래 연구실에서 함께 정했으며, 본인이 맡은 부분은 다음과 같습니다."
+      items:
+        - "관련 논문을 읽고 개념, 기술 정리"
+        - "ns-3(5G-LENA) 환경 빌드와 실행"
+        - "스케줄러 코드 실행과 다중 플로우 확장을 단독으로 수행 (베어러 단계까지 구현, LC 단계 진행 중)"
+        - "연구실 세미나에서 정리한 내용과 진행 상황을 발표해 지속적으로 공유"
