@@ -8,6 +8,14 @@
 - 사용 테마: [Kiyomi Portfolio](https://github.com/mathscantor/hugo-theme-kiyomi-portfolio) (MIT 라이선스)
 - 원본 테마의 영문 안내는 [site/themes/template/README.md](site/themes/template/README.md)에 그대로 남겨 두었습니다.
 
+## 화면
+
+| 데스크톱 (1440px) | 모바일 (390px) |
+| --- | --- |
+| ![데스크톱 1440px 첫 화면](docs/screenshots/desktop-1440.png) | ![모바일 390px 첫 화면](docs/screenshots/mobile-390.png) |
+
+2026-11-04 15:28 KST, Microsoft Edge 156 개발자 도구의 반응형 모드로 공개 사이트를 캡처했습니다. 동작 확인 결과는 [docs/VERIFICATION.md](docs/VERIFICATION.md)에 정리했습니다.
+
 ## 사용 도구와 버전
 
 | 도구 | 버전 | 사용 위치 |
