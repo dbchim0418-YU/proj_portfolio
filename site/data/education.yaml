@@ -1,8 +1,4 @@
-# Education history, newest first.
-- degree: "BSc in Computer Science"
-  school: "Example University"
-  year: "2019"
-
-- degree: "High School Diploma"
-  school: "Example High School"
-  year: "2015"
+# 학력 (최신순)
+- school: "전북대학교"
+  degree: "컴퓨터인공지능학부 재학"
+  year: "2024 ~ 현재"
