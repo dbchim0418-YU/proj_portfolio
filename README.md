@@ -59,3 +59,32 @@ proj_portfolio/
    python .github/pages_build.py --build
    ```
    결과는 `public/` 폴더에 만들어지며, `.gitignore`에 들어 있어 커밋되지 않습니다.
+
+## 내용을 고칠 때 수정할 파일
+
+| 바꾸고 싶은 내용 | 파일 |
+| --- | --- |
+| 이름, 첫 화면 소개 문구, 분야 표시, GitHub 주소, 아바타 | `site/hugo.toml`의 `[params]` |
+| 소개 섹션 (관심 분야, 학습 목표) | `site/content/_index.md` |
+| 연구 활동, 그 밖의 활동 | `site/data/experience.yaml` |
+| 기술과 사용 사례 | `site/data/skills.yaml` |
+| 학력 | `site/data/education.yaml` |
+| 섹션 구성, 문구, 메뉴 | `site/layouts/` 아래 파일 (테마 원본을 복사해 수정한 파일) |
+| 색, 글꼴, 간격 같은 스타일 | `site/assets/css/custom.css` |
+| 메뉴 이동, 뒤로 가기, 모바일 메뉴 동작 | `site/assets/js/nav.js` |
+| 아바타 그림, 글꼴 파일 | `site/static/images/`, `site/static/fonts/` |
+
+`site/themes/template/` 안의 테마 원본은 직접 고치지 않습니다. 바꾸고 싶은 템플릿은 같은 경로로 `site/layouts/`에 복사해서 고치면 Hugo가 복사본을 우선 사용합니다.
+
+## 수정 후 다시 배포하기
+
+1. 파일을 고친 뒤 미리보기 서버(`hugo server -s site --config hugo.toml,pages.json`)로 화면을 확인합니다.
+2. 바뀐 파일만 골라 커밋하고 main에 push합니다.
+   ```bash
+   git add site/data/experience.yaml
+   git commit -m "content: 연구 활동 내용 수정"
+   git push
+   ```
+3. 저장소의 **Actions** 탭에서 `Deploy Hugo to GitHub Pages` 실행이 자동으로 시작되었는지 확인합니다. build와 deploy가 모두 초록 체크가 되면 배포가 끝난 것입니다.
+4. 공개 사이트(https://dbchim0418-yu.github.io/proj_portfolio/)를 `Ctrl + F5`로 새로고침해 바뀐 내용을 확인합니다.
+5. 실행이 실패하면 실패한 단계를 눌러 오류 줄을 확인하고, 고친 뒤 다시 push합니다. 처음 저장소를 만들 때는 **Settings → Pages → Source**를 **GitHub Actions**로 설정해야 합니다.
