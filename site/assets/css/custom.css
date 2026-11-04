@@ -37,3 +37,8 @@
 .hero h1 .italic {
   font-style: normal;
 }
+
+/* 주소로 바로 들어오거나 앵커로 이동할 때 고정 메뉴(높이 80px)에 제목이 가리지 않도록 여백 확보 */
+section[id] {
+  scroll-margin-top: 80px;
+}
