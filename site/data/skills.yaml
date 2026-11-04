@@ -11,6 +11,9 @@
     - name: "Python"
       explanation: "인공지능 수업에서 육목(Connect6) 대전 AI 에이전트를 구현했습니다."
 
+    - name: "Git, GitHub Actions"
+      explanation: "이 포트폴리오 사이트를 작은 단위로 나눠 커밋하고, main에 push하면 GitHub Actions가 Hugo로 빌드해 GitHub Pages에 자동 배포하도록 구성했습니다."
+
 - category: "역량"
   items:
     - name: "논문 분석, 발표"
