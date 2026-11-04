@@ -42,3 +42,68 @@
 section[id] {
   scroll-margin-top: 80px;
 }
+
+/* 소개 섹션 본문: 긴 한글 문단을 읽기 쉽게 왼쪽 정렬하고 소제목 구분 */
+.about-body {
+  text-align: left;
+}
+.about-body h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin: 2rem 0 0.75rem;
+}
+.about-body h3:first-child {
+  margin-top: 0;
+}
+.about-body p {
+  margin: 0 0 1rem;
+}
+.about-body a {
+  color: hsl(var(--primary));
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 한글 문장이 단어 중간에서 끊기지 않도록 하고, 긴 영문 주소는 영역 안에서 줄바꿈 */
+body {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 연구 활동 카드: 진행 상태 표시와 제목이 있는 상세 블록 */
+.status-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #0b1a33;
+  background-color: #cfe0ff;
+}
+.exp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.exp-detail-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin: 0 0 0.375rem;
+}
+.exp-detail p {
+  margin: 0;
+}
+.exp-detail-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.context-quote {
+  font-style: normal; /* 한글 인용문은 기울임 대신 왼쪽 선으로만 구분 */
+}
