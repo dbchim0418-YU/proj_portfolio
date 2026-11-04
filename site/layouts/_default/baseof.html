@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "ko" }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  {{- partial "nav.html" . -}}
+  <main>
+    {{- block "main" . }}{{ end -}}
+  </main>
+  {{- partial "footer.html" . -}}
+
+  {{/* 기술 설명 펼치기(skills-toggle.js)와 떠 있는 연락 버튼(contact-fab.js)은 더 이상 쓰지 않아 불러오지 않음 */}}
+  {{ $scrollReveal := resources.Get "js/scroll-reveal.js" }}
+  {{ $nav := resources.Get "js/nav.js" }}
+  {{ if $scrollReveal }}<script defer src="{{ $scrollReveal.RelPermalink }}"></script>{{ end }}
+  {{ if $nav }}<script defer src="{{ $nav.RelPermalink }}"></script>{{ end }}
+</body>
+</html>
