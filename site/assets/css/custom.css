@@ -144,3 +144,16 @@ footer a:focus-visible,
 .btn-primary:focus-visible {
   outline-color: #93c5fd;
 }
+
+/* 모바일(768px 미만)에서는 연구 활동 왼쪽의 점 칸(60px)을 줄여 카드 본문 폭을 넓힘 */
+@media (max-width: 767px) {
+  #experience .flex.gap-6 > .shrink-0 {
+    width: 16px !important;
+  }
+  #experience .flex.gap-6 {
+    gap: 0.75rem !important;
+  }
+  #experience .card.p-5 {
+    padding: 1rem;
+  }
+}
