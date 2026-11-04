@@ -1,0 +1,23 @@
+<section id="education" class="section bg-background" style="border-top: 1px solid hsl(var(--border) / 0.4);">
+  <div class="container" style="max-width: 64rem;">
+    <div class="fade-in">
+      <h2 class="section-header mb-10">
+        <span class="section-bar"></span>
+        학력
+      </h2>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        {{ range hugo.Data.education }}
+        <div class="card p-6" style="border-left: 4px solid hsl(var(--primary));">
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <h3 class="font-bold text-lg">{{ .school }}</h3>
+            <span class="text-sm font-semibold text-primary" style="background-color: hsl(var(--primary) / 0.05); padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+              {{ .year }}
+            </span>
+          </div>
+          <p class="text-muted">{{ .degree }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
