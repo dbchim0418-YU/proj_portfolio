@@ -64,7 +64,10 @@
     }
     var el = document.getElementById(id);
     if (!el) return;
-    var top = el.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT;
+    // 나타나기 효과(transform)가 진행 중인 요소도 정확한 위치로 가도록, transform 영향을 받지 않는 offsetTop으로 계산
+    var top = 0;
+    for (var node = el; node; node = node.offsetParent) top += node.offsetTop;
+    top -= NAV_HEIGHT;
     window.scrollTo({ top: top, behavior: 'smooth' });
   }
 
