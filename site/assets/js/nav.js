@@ -40,6 +40,7 @@
     mobileMenu.classList.add('open');
     mobileBackdrop.classList.add('open');
     hamburgerBtn.setAttribute('aria-expanded', 'true');
+    hamburgerBtn.setAttribute('aria-label', '메뉴 닫기');
     hamburgerBtn.querySelector('svg:first-child').style.display = 'none';
     hamburgerBtn.querySelector('svg:last-child').style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -49,6 +50,7 @@
     mobileMenu.classList.remove('open');
     mobileBackdrop.classList.remove('open');
     hamburgerBtn.setAttribute('aria-expanded', 'false');
+    hamburgerBtn.setAttribute('aria-label', '메뉴 열기');
     hamburgerBtn.querySelector('svg:first-child').style.display = 'block';
     hamburgerBtn.querySelector('svg:last-child').style.display = 'none';
     document.body.style.overflow = '';
@@ -72,6 +74,14 @@
 
   if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMobileMenu);
   if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
+
+  // 모바일 메뉴가 열려 있을 때 Esc 키로 닫고, 초점을 메뉴 버튼으로 되돌림
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) {
+      closeMobileMenu();
+      hamburgerBtn.focus();
+    }
+  });
 
   // All scroll buttons/links
   document.querySelectorAll('[data-scroll]').forEach(function (el) {
