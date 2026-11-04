@@ -1,5 +1,5 @@
 baseURL = 'https://example.org/'
-languageCode = 'ko'
+locale = 'ko'
 title = '유채민 | 무선 네트워크 포트폴리오'
 
 
@@ -10,6 +10,7 @@ title = '유채민 | 무선 네트워크 포트폴리오'
   field = "Network & Wireless Communication"
   github = "https://github.com/dbchim0418-YU"
   profileImage = "images/avatar.svg"
+  profileImageAlt = "기지국에서 여러 단말로 무선 연결이 퍼지는 모습을 그린 아바타"
   favicon = "images/avatar.svg"
   ogImage = "images/avatar.svg"
   description = "5G MAC 스케줄러를 연구하는 학부연구생 유채민의 포트폴리오입니다."
