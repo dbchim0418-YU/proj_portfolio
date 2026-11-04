@@ -30,7 +30,8 @@
 /* 영문은 테마 글꼴을 유지하고, 테마 글꼴에 없는 한글은 Pretendard로 표시 */
 :root {
   --font-sans: 'Inter', 'Pretendard', system-ui, -apple-system, sans-serif;
-  --font-display: 'Playfair Display', 'Pretendard', serif;
+  /* 제목은 Pretendard를 먼저 써서 한글 제목 속 영문, 숫자(예: 5G/6G)가 세리프 글꼴로 섞여 보이지 않게 함 */
+  --font-display: 'Pretendard', 'Playfair Display', serif;
 }
 
 /* 한글 이름은 기울임 글꼴이 없어 억지로 눕혀지므로 기울임 해제 */
