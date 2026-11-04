@@ -7,15 +7,11 @@ title = '유채민 | 무선 네트워크 포트폴리오'
   firstName = "유채민"
   lastName = ""
   tagline = "무선 네트워크의 자원 스케줄링을 연구합니다."
-  email = "jane.doe@example.com"
-  linkedin = "https://www.linkedin.com/in/example/"
-  location = "Remote"
   field = "Network & Wireless Communication"
   github = "https://github.com/dbchim0418-YU"
   profileImage = "images/avatar.svg"
   favicon = "images/avatar.svg"
   ogImage = "images/avatar.svg"
-  resumeFile = "/resume.pdf"
   description = "5G MAC 스케줄러를 연구하는 학부연구생 유채민의 포트폴리오입니다."
 
 disableKinds = ['taxonomy', 'term']
