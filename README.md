@@ -88,3 +88,18 @@ proj_portfolio/
 3. 저장소의 **Actions** 탭에서 `Deploy Hugo to GitHub Pages` 실행이 자동으로 시작되었는지 확인합니다. build와 deploy가 모두 초록 체크가 되면 배포가 끝난 것입니다.
 4. 공개 사이트(https://dbchim0418-yu.github.io/proj_portfolio/)를 `Ctrl + F5`로 새로고침해 바뀐 내용을 확인합니다.
 5. 실행이 실패하면 실패한 단계를 눌러 오류 줄을 확인하고, 고친 뒤 다시 push합니다. 처음 저장소를 만들 때는 **Settings → Pages → Source**를 **GitHub Actions**로 설정해야 합니다.
+
+## 출처와 라이선스
+
+| 자료 | 사용 위치 | 구분 | 출처 | 이용 조건 |
+| --- | --- | --- | --- | --- |
+| Kiyomi Portfolio 테마 | 사이트 전체 레이아웃, 스타일, 스크립트 (`site/themes/template/`) | 외부 자료 | https://github.com/mathscantor/hugo-theme-kiyomi-portfolio | MIT 라이선스. 원문은 [LICENSE](LICENSE), [site/themes/template/LICENSE](site/themes/template/LICENSE) |
+| 테마 템플릿 수정본 | `site/layouts/`, `site/assets/js/nav.js` | 외부 자료를 직접 수정 | 위 테마 원본 | MIT 라이선스를 따름 |
+| Pretendard 1.3.9 글꼴 (경량판) | 한글 글꼴 (`site/static/fonts/pretendard/`) | 외부 자료 | https://github.com/orioncactus/pretendard | SIL Open Font License 1.1. 원문은 [LICENSE.txt](site/static/fonts/pretendard/LICENSE.txt) |
+| Inter, Playfair Display 글꼴 | 영문 본문, 제목 (테마가 Google Fonts에서 불러옴) | 외부 자료 | https://fonts.google.com | SIL Open Font License 1.1 |
+| 준비 스크립트 `prepare_github_pages.py`, `.github/` | 배포 준비와 GitHub Actions 빌드 | 수업 제공 자료 | 2026학년도 초급프로젝트 | 수업 안내에 따름 |
+| 아바타 그림 `avatar.svg` | 첫 화면 프로필 이미지, 파비콘 | 직접 제작 (AI 도구로 SVG 작성 후 본인이 선택, 수정) | 이 저장소 | 별도 조건 없음 |
+| 소개, 연구 활동, 기술 문구 | `site/content/`, `site/data/` | 직접 작성 (AI 도구로 문장 다듬기) | 이 저장소 | 별도 조건 없음 |
+| `site/assets/css/custom.css`, 404 페이지 | 사이트 전용 스타일, 오류 페이지 | 직접 작성 (AI 도구 보조) | 이 저장소 | 별도 조건 없음 |
+
+AI 도구는 문구 다듬기, 템플릿 수정 코드 작성, 동작 시험에 사용했으며, 모든 반영 내용은 본인이 확인하고 커밋했습니다. 자세한 사용 기록은 과제 보고서에 정리했습니다.
