@@ -157,3 +157,40 @@ footer a:focus-visible,
     padding: 1rem;
   }
 }
+
+/* 운영체제에서 '애니메이션 줄이기'를 켠 사용자에게는 나타나기 효과와 부드러운 스크롤 없이 바로 표시 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-in,
+  .fade-in-left,
+  .fade-in-right,
+  .fade-in-none {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* 키보드 사용자를 위한 '본문 바로가기' 링크: 평소에는 숨기고 Tab으로 선택했을 때만 왼쪽 위에 표시 */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 1rem;
+}
