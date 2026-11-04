@@ -1,7 +1,11 @@
 ---
-title: "Jane Doe — Software Engineer"
+title: "유채민 | 무선 네트워크 포트폴리오"
 ---
 
-Hi, I'm Jane. This is the About section, and it is rendered from the body of
-`content/_index.md`. Replace this text with a short introduction about yourself,
-what you do, and what you care about.
+### 관심 분야: 네트워크, 이동통신 (5G/6G)
+
+네트워크 수업에서 특히 무선 통신 부분에 흥미를 느꼈습니다. 선 없이 데이터를 주고받으면서도 여러 사용자가 한정된 무선 자원을 나눠 쓰며 동시에 통신할 수 있다는 점이 인상 깊었습니다. 이후 클라우드에 관심이 생겨 관련 내용을 찾아보다가 자연스럽게 네트워크 기술에 대해서도 찾아보게 되었고, 그 과정에서 위성 통신과 6G 같은 차세대 통신 기술에 관심을 갖게 되었습니다. 네트워크를 더 깊이 공부하고 싶어 네트워크 분야 학부연구실에 들어갔고, 현재 [5G MAC 스케줄러 연구](#experience)에 참여하고 있습니다.
+
+### 학습 목표: O-RAN의 xApp으로 AI가 기지국 제어에 쓰이는 방식 이해하기
+
+연구실에서 RAN 구조와 개념을 공부해 세미나에서 발표하면서, AI 모델로 무선 자원을 제어하는 O-RAN의 xApp에 관심이 생겼습니다. 다중 플로우 구현을 마친 뒤 xApp을 본격적으로 공부하기 위해, 지금은 기계학습 수업에서 AI 모델의 기본 학습 방법인 지도학습과 비지도학습을 익히고 있습니다. 다음 단계로 이 내용을 바탕으로 AI 모델이 기지국에서 어떤 데이터를 받아 어떤 판단을 내리는지, xApp의 동작 로직을 공부할 계획입니다.
