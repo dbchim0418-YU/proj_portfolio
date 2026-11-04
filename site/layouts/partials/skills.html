@@ -1,0 +1,27 @@
+<section id="skills" class="section bg-muted-20" style="padding-top: 4rem; padding-bottom: 4rem;">
+  <div class="container" style="max-width: 64rem;">
+    <div class="fade-in">
+      <h2 class="section-header mb-10">
+        <span class="section-bar"></span>
+        기술
+      </h2>
+
+      <!-- 원본 테마는 기술을 눌러야 설명이 보였으나, 사용 사례를 바로 읽을 수 있도록 항상 표시 -->
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        {{ range hugo.Data.skills }}
+        <div>
+          <h3 class="text-muted font-bold uppercase tracking-widest mb-3" style="font-size: 0.75rem;">{{ .category }}</h3>
+          <ul class="skill-cards">
+            {{ range .items }}
+            <li class="card skill-card">
+              <p class="skill-card-name">{{ .name }}</p>
+              <p class="text-sm text-muted leading-relaxed">{{ .explanation | markdownify }}</p>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
