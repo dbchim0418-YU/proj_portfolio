@@ -12,7 +12,7 @@ title = '유채민 | 무선 네트워크 포트폴리오'
   profileImage = "images/avatar.svg"
   profileImageAlt = "기지국에서 여러 단말로 무선 연결이 퍼지는 모습을 그린 아바타"
   favicon = "images/avatar.svg"
-  ogImage = "images/avatar.svg"
+  ogImage = "images/og-image.png"  # 메신저, SNS 미리보기용 (SVG는 대부분 지원하지 않아 PNG 사용)
   description = "5G MAC 스케줄러를 연구하는 학부연구생 유채민의 포트폴리오입니다."
 
 disableKinds = ['taxonomy', 'term']
