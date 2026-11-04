@@ -1,24 +1,17 @@
-# Skills grouped by category. Each skill shows its `explanation` when clicked.
-- category: "Core Qualifications"
+# 기술을 분류별로 묶고, 각 기술에 실제로 사용한 사례(explanation)를 적습니다.
+- category: "연구에 사용한 기술"
   items:
-    - name: "Problem Solving"
-      explanation: "Describe how you have applied this skill in your work."
-    - name: "System Design"
-      explanation: "Describe how you have applied this skill in your work."
-    - name: "Technical Leadership"
-      explanation: "Describe how you have applied this skill in your work."
+    - name: "C++"
+      explanation: "ns-3 5G-LENA의 스케줄러 코드(C++)를 분석하고, 다중 플로우를 위해 TFT, 베어러 연결 부분을 수정했습니다. (베어러 단계까지 구현)"
+    - name: "Linux (Ubuntu)"
+      explanation: "ns-3 시뮬레이터 빌드, 실행 환경을 구성했습니다."
 
-- category: "Technical"
+- category: "수업과 과제"
   items:
-    - name: "Go"
-      explanation: "Used to build backend services and CLI tools."
     - name: "Python"
-      explanation: "Used for scripting, automation and data tooling."
-    - name: "TypeScript"
-      explanation: "Used to build web frontends and Node services."
-    - name: "SQL"
-      explanation: "Used to query and model relational data."
-    - name: "Docker"
-      explanation: "Used to containerize and deploy applications."
-    - name: "Git"
-      explanation: "Used for version control and collaboration."
+      explanation: "인공지능 수업에서 육목(Connect6) 대전 AI 에이전트를 구현했습니다."
+
+- category: "역량"
+  items:
+    - name: "논문 분석, 발표"
+      explanation: "스케줄러 논문을 정리해 연구실 세미나에서 발표했습니다."
