@@ -129,3 +129,18 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* 키보드로 이동할 때 현재 선택한 링크, 버튼을 분명하게 표시 (마우스 클릭 때는 표시하지 않음) */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+/* 남색 배경 위에서는 밝은 색으로 표시해 배경과 구분 */
+.bg-navy a:focus-visible,
+.bg-navy button:focus-visible,
+footer a:focus-visible,
+.btn-primary:focus-visible {
+  outline-color: #93c5fd;
+}
