@@ -1,17 +1,19 @@
+{{- /* 첫 화면에서는 같은 페이지 앵커로 부드럽게 이동하고, 404 같은 다른 페이지에서는 첫 화면의 해당 섹션으로 이동 */ -}}
+{{- $home := cond .IsHome "" ("" | relURL) -}}
 <header class="navbar" id="navbar">
   <div class="container flex items-center justify-between" style="height: 100%;">
-    <a href="#top" class="font-display font-bold text-xl text-foreground transition-colors hover:text-primary" style="letter-spacing: 0.025em;">
+    <a href="{{ $home }}#top" class="font-display font-bold text-xl text-foreground transition-colors hover:text-primary" style="letter-spacing: 0.025em;">
       {{ .Site.Params.firstName }} {{ .Site.Params.lastName }}
     </a>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center gap-8" style="display: none;" id="desktop-nav">
-      <a href="#about" class="nav-link" data-scroll="about">소개</a>
-      <a href="#experience" class="nav-link" data-scroll="experience">연구 활동</a>
-      <a href="#skills" class="nav-link" data-scroll="skills">기술</a>
-      <a href="#education" class="nav-link" data-scroll="education">학력</a>
-      <a href="#contact" class="nav-link" data-scroll="contact">연락처</a>
-      <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" data-scroll="contact">
+      <a href="{{ $home }}#about" class="nav-link"{{ if $.IsHome }} data-scroll="about"{{ end }}>소개</a>
+      <a href="{{ $home }}#experience" class="nav-link"{{ if $.IsHome }} data-scroll="experience"{{ end }}>연구 활동</a>
+      <a href="{{ $home }}#skills" class="nav-link"{{ if $.IsHome }} data-scroll="skills"{{ end }}>기술</a>
+      <a href="{{ $home }}#education" class="nav-link"{{ if $.IsHome }} data-scroll="education"{{ end }}>학력</a>
+      <a href="{{ $home }}#contact" class="nav-link"{{ if $.IsHome }} data-scroll="contact"{{ end }}>연락처</a>
+      <a href="{{ $home }}#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"{{ if $.IsHome }} data-scroll="contact"{{ end }}>
         연락하기
       </a>
     </nav>
@@ -36,12 +38,12 @@
 
 <!-- Mobile Menu -->
 <nav class="mobile-menu" id="mobile-menu">
-  <a href="#about" class="mobile-nav-link" data-scroll="about">소개</a>
-  <a href="#experience" class="mobile-nav-link" data-scroll="experience">연구 활동</a>
-  <a href="#skills" class="mobile-nav-link" data-scroll="skills">기술</a>
-  <a href="#education" class="mobile-nav-link" data-scroll="education">학력</a>
-  <a href="#contact" class="mobile-nav-link" data-scroll="contact">연락처</a>
+  <a href="{{ $home }}#about" class="mobile-nav-link"{{ if $.IsHome }} data-scroll="about"{{ end }}>소개</a>
+  <a href="{{ $home }}#experience" class="mobile-nav-link"{{ if $.IsHome }} data-scroll="experience"{{ end }}>연구 활동</a>
+  <a href="{{ $home }}#skills" class="mobile-nav-link"{{ if $.IsHome }} data-scroll="skills"{{ end }}>기술</a>
+  <a href="{{ $home }}#education" class="mobile-nav-link"{{ if $.IsHome }} data-scroll="education"{{ end }}>학력</a>
+  <a href="{{ $home }}#contact" class="mobile-nav-link"{{ if $.IsHome }} data-scroll="contact"{{ end }}>연락처</a>
   <div style="margin-top: 0.5rem; margin-bottom: 0.25rem; padding: 0 0.75rem;">
-    <a href="#contact" class="btn btn-primary w-full" data-scroll="contact" style="font-size: 0.875rem;">연락하기</a>
+    <a href="{{ $home }}#contact" class="btn btn-primary w-full"{{ if $.IsHome }} data-scroll="contact"{{ end }} style="font-size: 0.875rem;">연락하기</a>
   </div>
 </nav>
